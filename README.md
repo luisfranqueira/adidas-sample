@@ -13,7 +13,7 @@
 1. Clone the project:
 
   ```sh
-  $ git clone //gitRepo
+  $ git clone git@github.com:luisfranqueira/adidas-sample.git
   ```
 
 2. Install dependencies:
@@ -22,11 +22,6 @@
   $ yarn
   ```
 
-# Tasks
-
-| Task     | Description                                                                       |
-|----------|-----------------------------------------------------------------------------------|
-| `lint`   | Run linter.                                                                       |
-| `start`  | Run `end-2-end` test suites using Nightwatch against Chrome in headless mode.     |
-
-> To run end-to-end tests against Chrome in normal mode simply run `nightwatch`.
+# Run tests
+`start`  => Run `end-2-end` test suites using Nightwatch against Chrome in headless mode.
+`nightwatch` Run end-to-end tests against Chrome in normal mode.
