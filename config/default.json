@@ -1,0 +1,9 @@
+{
+  "server": {
+    "hostname": "http://store.demoqa.com/",
+    "user": {
+      "email": "testing+individual@mailinator.com",
+      "name": "John Doe"
+    }
+  }
+}
