@@ -6,7 +6,7 @@ describe('Sample Page', () => {
 
   beforeEach((client, done) => {
     homePage = client.page.homePage();
-    // samplePage = client.page.samplePage();
+    samplePage = client.page.samplePage();
     homePage.navigate();
     done();
   });
@@ -17,5 +17,16 @@ describe('Sample Page', () => {
 
   it('should open Sample Page', () => {
     homePage.assertPageLoad();
+    homePage.openSamplePage();
+    samplePage.addComment();
+    samplePage.addName();
+    samplePage.addWebsite();
+    samplePage.clickSubmit();
+    samplePage.assertErroPageEmailError();
+    samplePage.goBackFromErrorPage()
+    samplePage.addEmail();
+    samplePage.clickSubmit();
+    samplePage.assertCommentAuthorName();
+    samplePage.assertCommentBody();
   });
 });
