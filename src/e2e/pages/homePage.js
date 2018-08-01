@@ -8,7 +8,7 @@ const homePageCommands = {
   },
   openSamplePage() {
     this.expect.element('@samplePageBottomMenuItem').to.be.visible.before(5000);
-    this.click('@samplePageBottomMenuItems');
+    this.click('@samplePageBottomMenuItem');
   }
 };
 
